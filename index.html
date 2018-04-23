@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<title>Enrique Rojas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <link href='http://fonts.googleapis.com/css?family=Lato:100,400,700,900' rel='stylesheet' type='text/css'> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-sidebar" id="myNavbar">
+            <a class="w3-bar-item button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()"
+                title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-home fa-2x"></i>
+            </a>
+            <a href="#portfolio" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-th fa-2x"></i>
+            </a>
+            <a href="#about" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-user fa-2x"></i>
+            </a>
+            <a href="#contact" class="w3-bar-item button w3-hide-small">
+                <i class="fa fa-envelope fa-2x"></i>
+            </a>
+        </div>
+        <!-- Navbar on small screens -->
+        <div id="mobileNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#home" class="w3-bar-item button" onclick="toggleFunction()">HOME</a>
+            <a href="#portfolio" class="w3-bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#about" class="w3-bar-item button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#contact" class="w3-bar-item button" onclick="toggleFunction()">CONTACT</a>
+        </div>
+    </div>
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg bgimg-1 w3-display-container" id="home">
+        <div class="w3-display-middle title" style="white-space:nowrap;">
+            <span class="w3-center w3-black w3-xlarge w3-wide">
+                <span class="w3-hide-small">HELLO, I'M </span>
+                <span> ENRIQUE ROJAS.</span>
+                <br>
+                <span class="w3-hide-small"> FULL STACK WEB DEVELOPER</span>
+            </span>
+        </div>
+    </div>
+    <!-- Container (Portfolio Section) -->
+    <div class=" w3-container w3-padding-64" id="portfolio">
+        <div class="section bg1"></div>
+        <br>
+        <h3 class="w3-center">MY WORK</h3>
+        <p class="w3-center">
+            <em>Here are some of my projects. You can click on the image to visit the fully deployed app. 
+        </p>
+        <br>
+        <!-- Responsive Grid. Three columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m4">
+                    <div class="card"> 
+                        <a href="https://nebula-color-moods.herokuapp.com/">
+                            <img class="card__img" src="assets/pictures/nebula.png" alt="NEBUL\">
+                        </a>
+                            <h2 class="card__title">NEBUL\</h2>
+                            <p class="card__text">A visually captivating, personally illuminating approach to modern mood tracking.</p>
+                            <a class="card__btn" href="https://github.com/scotrenz/GetLost" target="_blank" class="">Demo</a>
+                            <a class="card__btn" href="https://github.com/mood-in-pixels/Nebula" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                          </div>
+            </div>
+            <div class="w3-col m4">
+                <div class="card"> 
+                    <a href="https://reel-it.herokuapp.com/">
+                        <img class="card__img" src="assets/pictures/reel_it.png" alt="Reel It">
+                    </a>
+                        <h2 class="card__title">Reel It</h2>
+                        <p class="card__text">Inspired by community-built databases, Reel It provides movie info that extends beyond the credits and critics. </p>
+                        <a  class="card__btn" href="https://scotrenz.github.io/Natours/" target="_blank" class="">Demo</a>
+                        <a class="card__btn" href="https://github.com/Swords-in-the-darkness/ReelIt" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                      </div>
+            </div>
+            <div class="w3-col m4">
+                    <div class="card"> 
+                        <a href="https://ero646.github.io/Crystal-Collector/">
+                            <img class="card__img" src="assets/pictures/crystals.png" alt="Crystal Collector">
+                        </a>
+                            <h2 class="card__title">Crystal Collector</h2>
+                            <p class="card__text">Interactive game for web browsers. Dynamically updates HTML page with the jQuery library.</p>
+                            <a class="card__btn" href="https://scotrenz.github.io/Brushworks-Painting/" target="_blank" class="">Demo</a>
+                            <a class="card__btn" href="https://github.com/ero646/Crystal-Collector" target="_blank" class=""><i class="fa fa-github fa-2x"></i></a>
+                          </div>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+    </div>
+    <!--Tech Icons-->
+    <div class="w3-row w3-center bg1 w3-padding-16">
+        <div class="w3-third w3-section">
+            <img class="icon" src="assets/icons/html.svg">
+            <img class="icon" src="assets/icons/css.svg">
+            <img class="icon" src="assets/icons/javascript.svg">
+            <img class="icon" src="assets/icons/jquery.svg">
+        </div>
+        <div class="w3-third w3-section">
+            <img class="icon" src="assets/icons/sass.svg">
+            <img class="icon" src="assets/icons/react.svg">
+            <img class="icon" src="assets/icons/node.svg">
+            <img class="icon" src="assets/icons/express.svg">
+        </div>
+        <div class="w3-third w3-section">
+            <img class="icon" src="assets/icons/handlebars.svg">
+            <img class="icon" src="assets/icons/mongodb.svg">
+            <img class="icon" src="assets/icons/mysql.svg">
+            <img class="icon" src="assets/icons/github.svg">
+        </div>
+    </div>
+    <!-- Second Parallax Image with About Text -->
+    <div class="bgimg bgimg-2 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">ABOUT</span>
+        </div>
+    </div>
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ENRIQUE ROJAS</h3>
+        <div class="w3-row">
+            <div class="u-margin-top-medium">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <div class="profile__section-left">
+                        <div class="image-responsive">
+                            <img class="w3-image image-responsive__picture" src="assets/pictures/barcelonabeach.jpg" alt="Photo of Me" width="500" height="333">
+                            <div class="image-responsive__overlay">
+                                <h2></h2>
+                                <p class="image-responsive__overlay--set1">
+                                    <a href="https://www.linkedin.com/in/enrique-rojas-800760112/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://github.com/ero646" target="_blank"><i class="fa fa-github"></i></a>
+                                </p>
+                                <hr>
+                                <hr>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hide this text on small devices -->
+                <div class="w3-col m6 w3-hide-small w3-padding-large">
+                    <div class="profile__section-right">
+                        <div class="text-box">
+                            <div class="text-box__section text-box__section-default">
+                                <h4 class="text-box__section--title">Creative. Curious. Confident.</h4>
+                                <div  class="text-box__section--content">
+                                    <p>
+                                        Always looking for new challenges and opportunities. I'm a full stack developer with an affinity towards the front-end. I have an eye for detail and am skilled at problem solving. My background is diverse. From working as as a clinical research coordinator at various high-level universities to managing multiple investment portfolios and now, pursuing a future in tech with it's immense potential. I am new to the space but I am a fast and eager learner with a strong work ethic. I look forward to the start of what I believe will be a succesfull and rewarding career. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-box__section">
+                                <h4 class="text-box__section--title">Why Tech?</h4>
+                                <div class="text-box__section--content">
+                                    <p>
+                                        My passion for coding stems from my desire to create. I love being able to use my cognitive and creative skills as well as my curiosity to create things that are unique, innovative, and beautiful. 
+
+                                        But need not worry; there is no God complex here :)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-box__section">
+                                <h4 class="text-box__section--title">My Skills</h4>
+                                <div class="text-box__section--content">
+                                    <p>
+                                        My skillset consists of HTML, CSS, Javascript, Bootstrap, jQuery, React, Redux, NodeJS, MySQL, MongoDB, AJAX, SASS, Microsoft Office, and Final Cut Pro. Currently exploring Ruby on Rails, Python, and Adobe Photoshop. 
+                                      
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="text-box__section">
+                                <h4 class="text-box__section--title">My Interests</h4>
+                                <div class="text-box__section--content">
+                                    <p>
+                                        Aside from coding, my personal interests include Astronomy, Guitar, Comics, Novels, Writing, Movies, Cosplay, Biking, Cryptocurrency/Blockchain, and hanging out with my two kittens!
+                                      
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Third Parallax Image with Contact Text -->
+    <div class="bgimg bgimg-3 w3-display-container">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+        </div>
+    </div>
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">THE SPACE I OCCUPY</h3>
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m4 w3-container">
+                <!-- Add Google Maps -->
+                <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+            </div>
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, IL
+                    <br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (773) 750-4036
+                    <br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: enriquerojas91@gmail.com
+                    <br>
+                </div>
+                <p>Leave me a note. It's free!</p>
+                <form id="contact-form" method="POST" action="https://formspree.io/enriquerojas91@gmail.com">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" name="message" placeholder="Message" required name="Message">
+                    <button class="button w3-black w3-right w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                    <input type="hidden" name="_next" value="ero646.github.io" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <div class="w3-xlarge w3-section">
+            <a href="https://github.com/ero646" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/in/enrique-rojas-800760112/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+        <div>Enrique Rojas&copy;</div>
+    </footer>
+
+    <script type="text/javascript" src="js/logic.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmNX29rk_tbFqoDWIyYCg5TglI2OP8Xnk&callback=myMap"></script>
+</body>
+
+</html>
+
+
+<script type="text/javascript" color="grey" opacity='0.7' zIndex="0" count="175" position="absolute" src="canvas-nest.js"></script>
+<script type="text/javascript">
+
+
+    function async_load() {
+        //async load github
+        var i = document.createElement("iframe");
+        i.src = "https://ghbtns.com/github-btn.html?user=hustcc&repo=canvas-nest.js&type=star&count=true";
+        i.scrolling = "no";
+        i.frameborder = "0";
+        i.border = "0";
+        i.setAttribute("frameborder", "0", 0);
+        i.width = "100px";
+        i.height = "20px";
+        document.getElementById("github_iframe").appendChild(i);
+    }
+
+    if (window.addEventListener) {window.addEventListener("load", async_load, false);}
+    else if (window.attachEvent) {window.attachEvent("onload", async_load);}
+    else {window.onload = async_load;}
+
+
+</script>
+
+
+
+</head>
+</body>
+</html>
